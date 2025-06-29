@@ -8,76 +8,73 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #e3f2fd, #fce4ec);
-      color: #333;
-    }
-
-    .header {
-      background-image: url('header.jpg'); /* Gambar background */
-      background-size: cover;
-      background-position: center;
-      height: 200px;
-      border-radius: 0;
-      box-shadow: none;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png'),
+                  linear-gradient(to bottom, #141e30, #243b55);
+      background-blend-mode: overlay;
+      color: #fff;
     }
 
     .container {
-      max-width: 480px;
+      max-width: 500px;
       margin: 0 auto;
-      background: linear-gradient(to bottom, #e3f2fd, #fce4ec);
-      border-radius: 0;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      margin-bottom: 20px;
     }
 
     .username {
       font-size: 2rem;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+      color: #f8f8f8;
     }
 
-    .link {
-      display: block;
-      background: linear-gradient(to right, #42a5f5, #7e57c2);
-      color: white;
-      padding: 14px 20px;
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 15px 20px;
       margin: 12px 0;
-      border-radius: 12px;
       text-decoration: none;
+      color: #fff;
       font-size: 1.1rem;
       font-weight: 500;
-      transition: 0.3s ease;
+      display: block;
+      transition: all 0.3s ease;
     }
 
-    .link:hover {
+    .card:hover {
       transform: scale(1.05);
-      background: linear-gradient(to right, #1e88e5, #6a1b9a);
+      background: rgba(255, 255, 255, 0.15);
     }
 
     .footer {
-      margin-top: 30px;
+      margin-top: 40px;
       font-size: 0.85rem;
-      color: #555;
-    }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        margin: 0 10px;
-      }
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="header"></div>
-
   <div class="container">
+    <img src="header.jpg" alt="Foto Profil" class="profile-pic" />
     <div class="username">@rezha.link</div>
 
-    <a href="https://wa.me/6281234567890" class="link">💬 WhatsApp</a>
-    <a href="https://tiktok.com/@rezha" class="link">📱 TikTok</a>
-    <a href="https://youtube.com/@rezha" class="link">▶️ YouTube</a>
-    <a href="https://instagram.com/rezha" class="link">📸 Instagram</a>
-    <a href="mailto:rezha@email.com" class="link">✉️ Kirim Email</a>
+    <a href="https://wa.me/6281234567890" class="card">💬 WhatsApp</a>
+    <a href="https://tiktok.com/@rezha" class="card">📱 TikTok</a>
+    <a href="https://youtube.com/@rezha" class="card">▶️ YouTube</a>
+    <a href="https://instagram.com/rezha" class="card">📸 Instagram</a>
+    <a href="mailto:rezha@email.com" class="card">✉️ Kirim Email</a>
 
     <div class="footer">© 2025 Rezha Utina</div>
   </div>
