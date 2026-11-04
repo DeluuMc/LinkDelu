@@ -4,78 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@DeluMc</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #2b0053, #4b007d, #6a00a8);
+      font-family: 'Poppins', sans-serif;
+      /* Background gradient pastel soft & dreamy */
+      background: linear-gradient(135deg, #1a1528 0%, #2d2444 50%, #1f1b33 100%);
       color: #FFFFFF;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
     }
 
     .container {
-      max-width: 480px;
+      width: 100%;
+      max-width: 440px;
       margin: auto;
-      padding: 40px 20px;
       text-align: center;
     }
 
+    .profile-container {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
     .profile-pic {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #b280ff;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-      margin-bottom: 20px;
+      /* Border dengan efek soft glow pastel */
+      border: 3px solid rgba(212, 178, 255, 0.6);
+      box-shadow: 0 0 25px rgba(183, 148, 244, 0.3);
     }
 
     .username {
-      font-size: 1.8rem;
-      font-weight: bold;
+      font-size: 1.6rem;
+      font-weight: 700;
       margin-bottom: 30px;
-      color: #f7eaff;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #ffd1ff, #c4b5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
+    /* Glassmorphism Menu Item */
     .menu-item {
       display: block;
-      background: #ffffff;
-      border-radius: 12px;
-      margin: 12px 0;
-      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      margin: 14px 0;
+      padding: 16px 20px;
       text-decoration: none;
-      color: #2b0053;
-      font-size: 1.1rem;
-      font-weight: 600;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: #f3f0ff;
+      font-size: 1rem;
+      font-weight: 500;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .menu-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(212, 178, 255, 0.5);
+      box-shadow: 0 12px 30px rgba(183, 148, 244, 0.25);
+      color: #ffffff;
+    }
+
+    .menu-item:active {
+      transform: scale(0.98);
     }
 
     .footer {
       text-align: center;
-      margin-top: 50px;
-      color: #d9c4ff;
-      font-size: 0.85rem;
+      margin-top: 40px;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="foto.jpg" alt="Foto Profil" class="profile-pic" />
+    <div class="profile-container">
+      <img src="foto.jpg" alt="Foto Profil" class="profile-pic" />
+    </div>
     <div class="username">@DeluMc</div>
 
-    <a href="https://sociabuzz.com/delumc/tribe" class="menu-item">Donasi / sosialbuzz</a>
-    <a href="https://www.whatsapp.com/channel/0029Vb4FaFR6RGJDbUOScz2s" class="menu-item">Saluran WA</a>
-    <a href="https://discord.gg/2v7VCQmqm" class="menu-item">Discord</a>
-    <a href="https://www.tiktok.com/@delu25_?_t=ZS-8xQmpnpZEGt&_r=1" class="menu-item">Akun Tiktok Utama</a>
-    <a href="https://youtube.com/@delumc?si=zMlaPCZ2DfDqAkzJ" class="menu-item">YOUTUBE</a>
-    <a href="https://www.instagram.com/nabil_evendiii/?igsh=MTlnbmhjeTIyc3Z2OA%3D%3D" class="menu-item">Instagram / IG</a>
-    <a href="https://www.tiktok.com/@delu25_?_r=1&_t=ZS-97SqU9jn4M8" class="menu-item">TikTok Utama</a>
-    <div class="footer">© 2026 DeluMc</div>
+    <a href="https://sociabuzz.com/delumc/tribe" class="menu-item">Donasi / Sociabuzz ☕</a>
+    <a href="https://www.whatsapp.com/channel/0029Vb4FaFR6RGJDbUOScz2s" class="menu-item">Saluran WhatsApp 📢</a>
+    <a href="https://discord.gg/2v7VCQmqm" class="menu-item">Discord Server 🎮</a>
+    <a href="https://youtube.com/@delumc?si=zMlaPCZ2DfDqAkzJ" class="menu-item">YouTube Channel ▶️</a>
+    <a href="https://www.instagram.com/nabil_evendiii/?igsh=MTlnbmhjeTIyc3Z2OA%3D%3D" class="menu-item">Instagram 📸</a>
+    <a href="https://www.tiktok.com/@delu25_?_t=ZS-8xQmpnpZEGt&_r=1" class="menu-item">TikTok Utama 🎬</a>
+
+    <div class="footer">© 2026 DeluMc • All Rights Reserved</div>
   </div>
 </body>
 </html>
